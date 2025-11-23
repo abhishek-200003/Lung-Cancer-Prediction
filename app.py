@@ -148,7 +148,7 @@ def main():
         st.markdown("<div class='glass-card'>", unsafe_allow_html=True)
         st.markdown("<div class='section-title'>📝 Enter Patient Details</div>", unsafe_allow_html=True)
 
-        age = st.number_input("Age", min_value=1, max_value=120, value=None)
+        age = st.slider("Age",1, 120, 18)
         cig = st.number_input("Average Cigarettes Per Day", min_value=0, max_value=100)
         area = st.number_input("Quality of Living Area (1–10)", min_value=1, max_value=10)
         alcohol = st.number_input("Average Alcohol Consumption (per day)", min_value=0, max_value=50)
@@ -198,5 +198,6 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
 
